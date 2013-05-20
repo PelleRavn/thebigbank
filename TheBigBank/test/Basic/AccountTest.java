@@ -72,7 +72,7 @@ public class AccountTest {
 		assertEquals(100.0, account.getBalance(), 0.0);
 		
 		account.deposit(0.05);
-		assertEquals(100.05, account.getBalance(), 0.0);
+		assertEquals(100.03, account.getBalance(), 0.0);
 	}
 	
 	@Test

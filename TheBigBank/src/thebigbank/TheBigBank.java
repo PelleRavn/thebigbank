@@ -3,6 +3,7 @@
  * and open the template in the editor.
  */
 package thebigbank;
+import View.MainView;
 
 /**
  *
@@ -14,6 +15,7 @@ public class TheBigBank {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        System.out.println("What is up my niggah? :/");
+        MainView mainView = new MainView();
+        mainView.setVisible(true);
     }
 }

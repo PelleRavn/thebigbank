@@ -5,3 +5,4 @@
 *.war
 *.ear
 /TheBigBank/nbproject/private/
+/TheBigBank/build/

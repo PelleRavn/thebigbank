@@ -1,4 +1,4 @@
-TheBigBank [![Build Status](https://travis-ci.org/PelleRavn/thebigbank.png?branch=master)](https://travis-ci.org/PelleRavn/thebigbank)
+TheBigBank [![Build Status](https://travis-ci.org/PelleRavn/thebigbank.png?branch=master)](https://travis-ci.org/PelleRavn/thebigbank) [![Build Status](http://aws.pelleravn.dk:8080/job/The%20Big%20Bank/badge/icon)]()
 ==========
 
 The Big Bank is a small school project at University College of Northern Jutland (UCN) in Denmark at lecture Software Testing in class Business Batchelor in Software Development.

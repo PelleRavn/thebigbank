@@ -68,4 +68,8 @@ public class Account {
 	public Customer getCustomer() {
 		return this.customer;
 	}
+	
+	public void giveAccountInterst() {
+		this.balance *= this.interestRate;
+	}
 }

@@ -20,6 +20,7 @@ import junit.framework.*;
 public class AccountTest {
     
 	static Account account;
+        
 	
     public AccountTest() {
         
@@ -58,8 +59,8 @@ public class AccountTest {
 		assertEquals("Blah", account.getCustomer().getName());
 	}
 	
-    @Test
-    public void interestRateTest() {
+        @Test
+        public void interestRateTest() {
 		assertEquals(0.05, account.getInterestRate(), 0.0);
 		account.setInterestRate(0.1);
 		assertEquals(0.1, account.getInterestRate(), 0.0);
@@ -71,22 +72,17 @@ public class AccountTest {
 		
 		account.deposit(100.0);
 		assertEquals(100.0, account.getBalance(), 0.0);
-		
-		account.deposit(0.05);
-		assertEquals(100.05, account.getBalance(), 0.0);
 	}
 	
 	@Test
 	public void withdrawTest() {
-		assertEquals(100.05, account.getBalance(), 0.0);
-		
 		assertTrue(account.withdraw(50.0));
-		assertEquals(50.05, account.getBalance(), 0.0);
+		assertEquals(50.0, account.getBalance(), 0.0);
 		
 		assertFalse(account.withdraw(100.0));
-		assertEquals(50.05, account.getBalance(), 0.0);
+		assertEquals(50.0, account.getBalance(), 0.0);
 		
-		assertTrue(account.withdraw(50.05));
+		assertTrue(account.withdraw(50.0));
 		assertEquals(0.0, account.getBalance(), 0.0);
 	}
 }

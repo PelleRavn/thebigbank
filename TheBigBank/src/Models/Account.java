@@ -70,6 +70,6 @@ public class Account {
 	}
 	
 	public void giveAccountInterst() {
-		this.balance *= this.interestRate;
+		this.balance += (this.balance * this.interestRate);
 	}
 }

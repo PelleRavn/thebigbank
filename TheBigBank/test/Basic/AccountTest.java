@@ -85,15 +85,16 @@ public class AccountTest {
 		assertTrue(account.withdraw(50.0));
 		assertEquals(0.0, account.getBalance(), 0.0);
 	}
-        @Test
-        public void addInterestToBalanceTest() {
-                double balanceBefore = account.getBalance();
-                account.giveAccountInterst();
-                double balanceAfter = account.getBalance();
-                double difference = balanceAfter - balanceBefore;
-                double differenceShouldBe = account.getBalance() * account.getInterestRate();
-                assertEquals(difference, differenceShouldBe, 0.0);
-                
-                
-        }
+        
+	@Test
+    public void addInterestToBalanceTest() {
+		double balanceBefore = account.getBalance();
+		double interestRate = account.getInterestRate();
+		
+		account.giveAccountInterst();
+		double shouldBe = balanceBefore + (balanceBefore * interestRate);
+		double balanceAfter = account.getBalance();
+		
+		assertEquals(shouldBe, balanceAfter, 0.0);
+	}
 }

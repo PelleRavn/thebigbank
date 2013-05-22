@@ -52,7 +52,6 @@ public class CustomerTest {
 	
 	@Test
 	public void nameTest() {
-		assertNull(customer.getName());
 		customer.setName("Bubber");
 		assertEquals("Bubber", customer.getName());
 		

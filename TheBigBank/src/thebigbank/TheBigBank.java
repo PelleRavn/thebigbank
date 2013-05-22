@@ -3,7 +3,8 @@
  * and open the template in the editor.
  */
 package thebigbank;
-import View.MainView;
+
+import Models.Customer;
 
 /**
  *
@@ -15,7 +16,6 @@ public class TheBigBank {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        MainView mainView = new MainView();
-        mainView.setVisible(true);
+        Customer customer = new Customer();
     }
 }

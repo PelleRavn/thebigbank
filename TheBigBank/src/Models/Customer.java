@@ -37,7 +37,11 @@ public class Customer {
 	}
 	
 	public boolean removeAccount(Account account) {
-		return this.accounts.remove(account);
+		if(accounts.contains(account)) {
+			return this.accounts.remove(account);
+		}
+		
+		return false;
 	}
 	
 	public String getName() {
@@ -46,5 +50,24 @@ public class Customer {
 	
 	public void setName(String name) {
 		this.name = name;
+	}
+	
+	public Account getAccountAtIndex(int index) {
+		Account foundAccount = null;
+		
+		if(index > 0) {
+			if(index < accounts.size()) {
+				Account thisAccount = accounts.get(index);
+				if(thisAccount != null) {
+					foundAccount = thisAccount;
+				}
+			}
+		}
+		
+		return foundAccount;
+	}
+	
+	public ArrayList<Account> getAccounts() {
+		return accounts;
 	}
 }

@@ -63,7 +63,7 @@ public class AccountTest {
         public void interestRateTest() {
 		assertEquals(0.05, account.getInterestRate(), 0.0);
 		account.setInterestRate(0.1);
-		assertEquals(0.1, account.getInterestRate(), 0.0);
+		assertEquals(0.2, account.getInterestRate(), 0.0);
 	}
 	
 	@Test
